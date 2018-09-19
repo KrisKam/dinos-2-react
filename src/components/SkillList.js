@@ -3,9 +3,14 @@ import "../App.css";
 
 class SkillList extends Component {
   
+
+
   render() {
     return (
-      <div></div>
+      <section>
+        <h4></h4>
+        <ul></ul>
+      </section>
     );
   }
 }
