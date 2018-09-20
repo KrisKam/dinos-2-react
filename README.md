@@ -22,6 +22,8 @@
 2. Host your app locally on port `8080`.
 3. Navigate to this folder and run `npm test`.
 
-#### Deployed Link
+#### Deployed Link  
+https://github.com/KrisKam/dinos-2-react
 
 #### Framework of choice
+React
