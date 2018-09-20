@@ -2,16 +2,28 @@ import React, { Component } from "react";
 import "../App.css";
 
 class SkillList extends Component {
-  
-
+ 
+  createSkillsList = () => {
+    return this.props.skills.map((skill, i) => {
+      return (
+        <li key={i}>{skill}</li>
+      );
+    })
+  }
 
   render() {
-    return (
-      <section>
-        <h4></h4>
-        <ul></ul>
-      </section>
-    );
+    if (this.props.display) {
+      return (
+        <section>
+          <h4>Skills</h4>
+          <ul className="skills-list">
+            {this.createSkillsList()}
+          </ul>
+        </section>
+      );
+    } else {
+      return null;
+    }
   }
 }
 
